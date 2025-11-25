@@ -4,7 +4,6 @@ import os
 path = input("Enter input image path: ")
 img_gray = Image.open(path).convert("L")     # For frequency sampling
 img_rgb  = Image.open(path).convert("RGB")   # For spatial sampling
-print("Error: Cannot load image!")
 gray = np.array(img_gray)
 rgb  = np.array(img_rgb)
 print("\nGrayscale Resolution :", gray.shape)     # (H, W)
